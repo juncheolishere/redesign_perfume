@@ -1,0 +1,421 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume graphy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topHeadNav">
+            <img src="img_src/pc-logo3.png" alt="">
+            <div id="openMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="wrap1">
+            <div style="width: calc(100%);height:100px; margin-left: auto;"></div>
+            <div style="display: flex;position: absolute;justify-content: center; width: calc(100%); top:125px">
+                <div class="typeIt1" style="text-align: center;"></div>
+            </div>
+            <div id="trigger1"></div>
+            <div style="width: calc(100%);height:4100px">
+                <div id="mainPcImg">
+                    <img src="img_src/2207-main-pc.jpg" alt="">
+                </div>
+            </div>
+            <div id="trigger2"></div>
+            <div id="secondBox">
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu1_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu1.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                아쿠아 디 파르마 미르토 디 파나레아
+                            </span>
+                            <span class="perfumeComment">
+                                청량한 비누향수의 대명사, 아쿠아 디 파르마 베스트셀러
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">바질,레몬,베르가못
+                                <br>바다 노트, 로스, 재스민
+                                <br>인센스, 쥬니퍼베리, 시더우드, 앰버</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu2_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu2.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                마크제이콥스 스플래쉬 레인
+                            </span>
+                            <span class="perfumeComment">
+                                소나기가 한차례 쏟아진 정원, 바닥에서부터 피어오르는 꽃들의 향기
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">젖은잔디, 산딸기, 클레멘타인
+                                <br>워터노트, 패션플라워, 화이트오키드
+                                <br>앰버, 머스크, 모스(이끼)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu3_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu3.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                프로소디 런던 오션 커모션 오 드 코롱
+                            </span>
+                            <span class="perfumeComment">
+                                바다 한 가운데 누워, 등에서 느껴지는 시원함과 철썩대는 파도소리가 자장가처럼 편안해지는 순간
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">SINGLE</span>
+                            <span class="note2">오조닉 씨워터, 마람풀, 비치우드, 화산이끼, 콤부</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu4_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu4.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                메모 오션 레더 오 드 퍼퓸
+                            </span>
+                            <span class="perfumeComment">
+                                시원한 바닷바람을 타고 부서지는 시트러스와 얇은 종이를 바닷물에 풀어헤친듯, 가볍게 올라오는 우디
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">만다린 오일, 바질, 바이올렛
+                                <br>세이지 앱솔루트, 엘레미 에센스, 시더우드 에센스
+                                <br>베티버, 레더, 넛맥</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu5_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu5.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                아틀리에 코롱 클레망틴 캘리포니아
+                            </span>
+                            <span class="perfumeComment">
+                                소다 밀키스를 마시는 상큼함, 아틀리에의 베스트셀러
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">캘리포니안 클레멘타인, 만다린, 쥬니퍼 베리
+                                <br>차이나 스타아니스, 이집트 바질, 쓰촨 페퍼
+                                <br>아이티 베티버, 사이프러스, 뉴칼레도니아 샌달우드</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu6_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu6.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                프레데릭 말 제라늄 뿌르 무슈
+                            </span>
+                            <span class="perfumeComment">
+                                비가 그친 제라늄 숲 속, 낮게 깔린 안개가 연출하는 신비로움
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">민트, 페퍼민트, 제라늄
+                                <br>시나몬, 클로브
+                                <br>화이트 머스크, 암브록산, 샌달우드, 인센스, Syrax</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu7_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu7.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                돌체앤가바나 라이트블루 오 인텐스
+                            </span>
+                            <span class="perfumeComment">
+                                기존의 돌체 라이트블루를 능가하는 완성된 상큼함
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">레몬, 그레니, 스미스 애플
+                                <br>메리골드, 재스민 페탈
+                                <br>머스크, 우디노트</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu8_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu8.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                메종마르지엘라 세일링데이
+                            </span>
+                            <span class="perfumeComment">
+                                선선한 바닷 바람이 뺨을 스칠 때, 요트 위에서 가볍게 숨을 고르는 듯한 상쾌
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">알데하이드, 코리앤더, 레드페퍼
+                                <br>아이리스, 쥬니퍼, 로즈, 아쿠아틱 어코드
+                                <br>앰버그리스, 해초, 시더우드</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu9_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu9.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                프라고나르 세드르 오 드 뚜왈렛
+                            </span>
+                            <span class="perfumeComment">
+                                낮엔 풀꽃들이 보이고, 저녁엔 얼음 결정이 보이는 시린 청량감
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">레몬, 만다린, 세이지
+                                <br>아틀라스 시더우드, 시나몬, 그린티
+                                <br>머스크, 앰버그리스</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu10_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu10.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                딥디크 오에도 오 드 뚜왈렛
+                            </span>
+                            <span class="perfumeComment">
+                                껍질이 두꺼운 두터운 자몽과 오렌지의 쌉싸름한 상큼함
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">자몽, 레몬, 타마린드, 만다린, 오렌지, 클레멘타인
+                                <br>타임(백리향)
+                                <br>시더우드</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu11_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu11.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                조말론 우드 세이지 앤 씨솔트 코롱
+                            </span>
+                            <span class="perfumeComment">
+                                허브나무의 잔잔한 담백함이 모던하게 퍼지는 편안한 향기
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">SINGLE</span>
+                            <span class="note2">암브레트 시드, 바다소금, 세이지, 해초, 자몽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu12_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu12.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                랄프로렌 폴로 랄프 우먼 오 드 뚜왈렛
+                            </span>
+                            <span class="perfumeComment">
+                                랄프로렌 여자향수 베스트, 뭐 뿌렸는지 꼭 물어보는 향수
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">오스만투스, 사과잎, 만다린 오렌지
+                                <br>매그놀리아, 보로니아, 옐로우 프리지아
+                                <br>머스크, 화이트 아이리스</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu13_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu13.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                디올 옴므 코롱
+                            </span>
+                            <span class="perfumeComment">
+                                포카리 스웨트처럼 청량하고 깔끔한 공용 향수
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">칼라브리아 베르가못, 자몽
+                                <br>히아신스, 아이리스, 레몬
+                                <br>화이트 머스크</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu14_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu14.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                에트로 페가소 오 드 뚜왈렛
+                            </span>
+                            <span class="perfumeComment">
+                                시원한 하이볼이 경쾌하게 부딪치며 한강 잔디공원 위로 흩뿌려질 때
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">네롤리,레몬,베르가못
+                                <br>바질, 페퍼, 아이리스
+                                <br>시더우드, 벤조인, 락로즈</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trigger3">
+                    <div class="perfumeContainer">
+                        <div class="perfumeBox">
+                            <div style="display: flex;justify-content: center; width: calc(100%);height: calc(100%);position:absolute;overflow: hidden;border-radius: 200px 200px 0px 0px;">
+                                <img class="backgroundImage" src="img_src/perfume_cu15_bg.jpg" alt="">
+                            </div>
+                            <img class="perfumImage" src="img_src/perfume_cu15.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <span class="perfumeName">
+                                클린 리저브 웜코튼 오 드 퍼퓸
+                            </span>
+                            <span class="perfumeComment">
+                                기어들어가고 싶게 촉촉한, 빨래 향기가 그대로 밴 이불
+                            </span>
+                            <span class="perfumeComment2">
+                            </span>
+                            <span class="note1">TOP<br>MIDDLE<br>BASE</span>
+                            <span class="note2">알데하이드, 진저, 워터리 오조닉
+                                <br>그린민트, 페퍼 플로럴 어코드
+                                <br>머스크, 인센스, 베티버</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: calc(100%);">
+                <div id="whatsNew">
+
+                    <div class="buttonPrev" onclick="prevPage(this)">&lt;</div>
+                    <div class="buttonNext" onclick="nextPage(this)">&gt;</div>
+                    <div class="perfumeWrap">
+                        <div class="perfumeList">
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                            <div class="perfumeListItem"></div>
+                        </div>
+                    </div>
+                    <div class="titleCircle">
+                        <span>What's New</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

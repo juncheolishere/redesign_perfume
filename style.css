@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'KoPubDotumMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    word-break: keep-all;
+}
+.st0{fill:none;stroke:#000000;stroke-width:2.2;stroke-linejoin:round;}
+.st1{fill:none;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+.st2{fill:none;}
+
+.typeIt1 {
+    top: 50px;
+    font-family: 'KoPubDotumMedium';
+    font-size: 1.5rem;
+}
+.topHeadNav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    align-items: center;
+    z-index: 5;
+}
+.topHeadNav > img {
+    position: relative;
+    left: calc(5%);
+}
+#openMenu {
+    position: absolute;
+    right: calc(5%);
+    cursor: pointer;
+    height: 19px;
+    width: 20px;
+    
+
+}
+#openMenu div{
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    transform: rotate(0deg);
+    top: 0px;
+    transition: 0.25s;
+}
+#openMenu div:nth-child(2){
+    top: 5px;
+}
+#openMenu div:nth-child(3){
+    top: 10px;
+}
+
+#mainPcImg{
+    width: calc(100%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+}
+#mainPcImg>img{
+    transform: scale(0.5,0.5);
+}
+
+#secondBox{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: calc(100%);
+}
+
+#secondBox > div{
+    display: flex;
+    position: relative;
+    width: calc(100%);
+    height: 600px;
+}
+.perfumeBox{
+    display: flex;
+    position: absolute;
+    
+    width: 350px;
+    height: 500px;
+    /* background-color: antiquewhite; */
+    /* box-shadow: 0px 0px 0px 5px rgb(119, 49, 49); */
+    top: calc(80%);
+}
+#secondBox .trigger3:nth-child(2n+1) .perfumeContainer .perfumeBox{
+    left: calc(20%);
+}
+#secondBox .trigger3:nth-child(2n) .perfumeContainer .perfumeBox{
+    right: calc(20%);
+}
+.perfumImage{
+    position: absolute;
+    display: flex;
+    transform: scale(0.5,0.5);
+    bottom: calc(-10%);
+}
+.backgroundImage{
+    position: absolute;
+    bottom: calc(0%);
+    height: calc(100%);
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.textBox{
+    display: flex;
+    position: absolute;
+    width: 375px;
+    height: 500px;
+    justify-content: center;
+    opacity: 0;
+    user-select: none;
+}
+#secondBox .trigger3:nth-child(2n+1) .perfumeContainer .textBox{
+    right: calc(20%);
+}
+#secondBox .trigger3:nth-child(2n) .perfumeContainer .textBox{
+    left: calc(20%);
+}
+.perfumeName{
+    display: flex;
+    position: absolute;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 1.5rem;
+    top: calc(10%);
+    font-weight: 900;
+    text-align: center;
+}
+.perfumeComment{
+    display: flex;
+    position: absolute;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 1rem;
+    top: calc(20%);
+    font-weight: 100;
+    text-align: center;
+}
+.perfumeComment2{
+    display: flex;
+    position: absolute;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 1.5rem;
+    top: calc(45%);
+    font-weight: 500;
+    text-align: center;
+}
+.note1{
+    display: flex;
+    position: absolute;
+    font-family: 'KoPubDotumMedium';
+    font-size: 0.8rem;
+    bottom: calc(5%);
+    left: calc(5%);
+    font-weight: 900;
+}
+.note2{
+    display: flex;
+    position: absolute;
+    font-family: 'KoPubDotumMedium';
+    font-size: 0.8rem;
+    bottom: calc(5%);
+    left: calc(30%);
+    font-weight: 400;
+}
+
+#whatsNew {
+    position: relative;
+    display: flex;
+    margin-top: 200px;
+    background-color: white;
+    height: 400px;
+    width: calc(100%);
+    justify-content: center;
+}
+.titleCircle {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    top: -3rem;
+    /* background-color: rgba(246,243,240,255); */
+    align-items: center;
+    justify-content: center;
+}
+.titleCircle > span {
+    font-family: 'KoPubDotumMedium';
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.perfumeWrap{
+    display: flex;
+    position: relative;
+    width: calc(80%);
+    overflow: hidden;
+}
+.perfumeList {
+    display: flex;
+    position: absolute;
+    flex-flow: row nowrap;
+    transition: 0.5s;
+    transform: translateX(0px);
+}
+.blur{
+    filter: blur(4px);
+}
+.perfumeListItem{
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 300px;
+    top: 50px;
+    margin-right: 50px;
+    background-color: #000000;
+}
+.buttonPrev{
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 75px 75px 75px 75px ;
+    background-color: rgba(246,243,240,255);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'KoPubDotumMedium';
+    left: calc(3%);
+    cursor: pointer;
+    user-select: none;
+    top: 185px;
+}
+.buttonNext{
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 75px 75px 75px 75px ;
+    background-color: rgba(246,243,240,255);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'KoPubDotumMedium';
+    right: calc(3%);
+    cursor: pointer;
+    user-select: none;
+    top: 185px;
+}
+@media screen and (max-width: 1250px) {
+    #secondBox .trigger3:nth-child(2n+1) .perfumeContainer .textBox{
+        right: calc(10%);
+    }
+    #secondBox .trigger3:nth-child(2n) .perfumeContainer .textBox{
+        left: calc(10%);
+    }
+    #secondBox .trigger3:nth-child(2n+1) .perfumeContainer .perfumeBox{
+        left: calc(10%);
+    }
+    #secondBox .trigger3:nth-child(2n) .perfumeContainer .perfumeBox{
+        right: calc(10%);
+    }
+}
+@media screen and (max-width: 950px) {
+    .textBox{
+        display: none;
+    }
+    #secondBox .trigger3:nth-child(2n+1) .perfumeContainer .perfumeBox{
+        left: calc(30%);
+    }
+    #secondBox .trigger3:nth-child(2n) .perfumeContainer .perfumeBox{
+        right: calc(30%);
+    }
+}
