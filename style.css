@@ -187,12 +187,15 @@
     height: 400px;
     width: calc(100%);
     justify-content: center;
+
 }
 .titleCircle {
     position: absolute;
     display: flex;
     width: 200px;
     top: -3rem;
+    user-select: none;
+
     /* background-color: rgba(246,243,240,255); */
     align-items: center;
     justify-content: center;
@@ -214,6 +217,7 @@
     flex-flow: row nowrap;
     transition: 0.5s;
     transform: translateX(0px);
+    user-select: none;
 }
 .blur{
     filter: blur(4px);
@@ -226,11 +230,13 @@
     top: 50px;
     margin-right: 50px;
     justify-content: center;
+    
 }
 .perfumeListItem > img {
     position: absolute;
     display: flex;
     top: 10px;
+    cursor: pointer;
 }
 .perfumeListItem > h4 {
     position: absolute;
@@ -246,7 +252,7 @@
     position: absolute;
     display: flex;
     font-size: 0.8rem;
-    top: 275px;
+    bottom: 0px;
     font-family: 'KoPubDotumMedium';
 }
 .buttonPrev{
