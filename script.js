@@ -365,3 +365,60 @@ const nextPage = (obj) => {
         perfumeList.style.transform = "translate("+depth+"px)";
     }
 }
+
+let depth2 = 0;
+
+const prevPage2 = (obj) => {
+    const perfumeWrap = obj.parentNode.children[2];
+    const wrapStyle = getComputedStyle(perfumeWrap);
+    // 보이는 전체 폭 wrapWidth
+    const wrapWidth = parseFloat(wrapStyle.width.split("p")[0]);
+
+    const perfumeList = perfumeWrap.children[0];
+    const listStyle = getComputedStyle(perfumeList);
+    const listWidth = parseFloat(listStyle.width.split("p")[0]);
+
+    const perfumeListItem = perfumeList.children[0];
+    const listItemStyle = getComputedStyle(perfumeListItem);
+    // 한 상자 폭 listWidth
+    const listItemWidth =  parseFloat(listItemStyle.width.split("p")[0]);
+    const listMarginRight = parseFloat(listItemStyle.marginRight.split("p")[0]);
+
+    if (depth2==0)
+    {
+        // 아무일도 일어나지 않는다.
+    }
+    else
+    {
+        depth2 += (listItemWidth+listMarginRight);
+        perfumeList.style.transform = "translate("+depth2+"px)";
+    }
+}
+
+const nextPage2 = (obj) => {
+    const perfumeWrap = obj.parentNode.children[2];
+    const wrapStyle = getComputedStyle(perfumeWrap);
+    // 보이는 전체 폭 wrapWidth
+    const wrapWidth = parseFloat(wrapStyle.width.split("p")[0]);
+
+    const perfumeList = perfumeWrap.children[0];
+    const listStyle = getComputedStyle(perfumeList);
+    const listWidth = parseFloat(listStyle.width.split("p")[0]);
+
+    const perfumeListItem = perfumeList.children[0];
+    const listItemStyle = getComputedStyle(perfumeListItem);
+    // 한 상자 폭 listWidth
+    const listItemWidth =  parseFloat(listItemStyle.width.split("p")[0]);
+    const listMarginRight = parseFloat(listItemStyle.marginRight.split("p")[0]);
+
+    // listWidth  vs depth2 + wrapWidth
+    if (listWidth <= -depth2 + wrapWidth)
+    {
+        // 아무일도 일어나지 않는다.
+    }
+    else
+    {
+        depth2 -= (listItemWidth+listMarginRight);
+        perfumeList.style.transform = "translate("+depth2+"px)";
+    }
+}
